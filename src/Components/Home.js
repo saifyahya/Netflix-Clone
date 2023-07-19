@@ -3,16 +3,13 @@ import { useState, useEffect } from "react";
 function Home() {
 
     function commentAdder(newMovie, id) {
-        {/*this function I will pass to modal as props and will let me modify the data (adding new properity:value) */ }
         data.map(movie => {
-            if (movie.id == id) {
+            if (movie.id === id) {
                 movie.comment = newMovie.userComment;
                 return movie
             }
-            else {
+            else
                 return movie
-            }
-
         })
         console.log('from home', data)
     }
